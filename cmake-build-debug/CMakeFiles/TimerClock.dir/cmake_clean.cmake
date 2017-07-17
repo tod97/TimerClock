@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TimerClock.dir/main.cpp.o"
+  "CMakeFiles/TimerClock.dir/Clock.cpp.o"
+  "CMakeFiles/TimerClock.dir/Drawer.cpp.o"
   "TimerClock.pdb"
   "TimerClock"
 )

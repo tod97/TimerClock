@@ -1,6 +1,10 @@
 #include <iostream>
+#include "Clock.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    Clock clock = Clock();
+    clock.startClock();
+
     return 0;
 }

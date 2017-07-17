@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/francescotodino/TimerClock/Clock.cpp
+ctime
+-
+sstream
+-
+iostream
+-
+thread
+-
+Clock.h
+/Users/francescotodino/TimerClock/Clock.h
+
+/Users/francescotodino/TimerClock/Clock.h
+ncurses.h
+-
+Drawer.h
+/Users/francescotodino/TimerClock/Drawer.h
+
+/Users/francescotodino/TimerClock/Drawer.cpp
+iostream
+-
+Drawer.h
+/Users/francescotodino/TimerClock/Drawer.h
+
+/Users/francescotodino/TimerClock/Drawer.h
+ncurses.h
+-
+
+/Users/francescotodino/TimerClock/main.cpp
+iostream
+-
+Clock.h
+/Users/francescotodino/TimerClock/Clock.h
+

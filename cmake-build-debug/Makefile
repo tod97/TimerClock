@@ -123,6 +123,60 @@ TimerClock/fast:
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/build
 .PHONY : TimerClock/fast
 
+Clock.o: Clock.cpp.o
+
+.PHONY : Clock.o
+
+# target to build an object file
+Clock.cpp.o:
+	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Clock.cpp.o
+.PHONY : Clock.cpp.o
+
+Clock.i: Clock.cpp.i
+
+.PHONY : Clock.i
+
+# target to preprocess a source file
+Clock.cpp.i:
+	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Clock.cpp.i
+.PHONY : Clock.cpp.i
+
+Clock.s: Clock.cpp.s
+
+.PHONY : Clock.s
+
+# target to generate assembly for a file
+Clock.cpp.s:
+	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Clock.cpp.s
+.PHONY : Clock.cpp.s
+
+Drawer.o: Drawer.cpp.o
+
+.PHONY : Drawer.o
+
+# target to build an object file
+Drawer.cpp.o:
+	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Drawer.cpp.o
+.PHONY : Drawer.cpp.o
+
+Drawer.i: Drawer.cpp.i
+
+.PHONY : Drawer.i
+
+# target to preprocess a source file
+Drawer.cpp.i:
+	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Drawer.cpp.i
+.PHONY : Drawer.cpp.i
+
+Drawer.s: Drawer.cpp.s
+
+.PHONY : Drawer.s
+
+# target to generate assembly for a file
+Drawer.cpp.s:
+	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Drawer.cpp.s
+.PHONY : Drawer.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TimerClock"
+	@echo "... Clock.o"
+	@echo "... Clock.i"
+	@echo "... Clock.s"
+	@echo "... Drawer.o"
+	@echo "... Drawer.i"
+	@echo "... Drawer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

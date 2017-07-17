@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/francescotodino/TimerClock/Clock.cpp">
+			<Option target="TimerClock"/>
+		</Unit>
+		<Unit filename="/Users/francescotodino/TimerClock/Clock.h">
+			<Option target="TimerClock"/>
+		</Unit>
+		<Unit filename="/Users/francescotodino/TimerClock/Drawer.cpp">
+			<Option target="TimerClock"/>
+		</Unit>
+		<Unit filename="/Users/francescotodino/TimerClock/Drawer.h">
+			<Option target="TimerClock"/>
+		</Unit>
 		<Unit filename="/Users/francescotodino/TimerClock/main.cpp">
 			<Option target="TimerClock"/>
 		</Unit>
