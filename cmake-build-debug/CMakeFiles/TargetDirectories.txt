@@ -1,0 +1,3 @@
+/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/TimerClock.dir
