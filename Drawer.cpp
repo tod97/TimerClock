@@ -7,7 +7,7 @@
 
 using namespace std;
 int Drawer::countType = 4;
-int Drawer::type = 3;
+int Drawer::type = 0;
 
 bool Drawer::draw( int x, int y, time_t now) {
 
@@ -104,7 +104,7 @@ void Drawer::printDigit(char c, int x, int y, int size) {
             break;
         case '4':
             for (int i = 0; i < size; ++i) {
-                mvprintw(y+(i%(size/2)), x+1, "|");
+                mvprintw(y+(i%(size/2)), x, "|");
                 mvprintw(y+(size/2)-1, x+1+i, "_");
                 mvprintw(y+(i%(size/2)), x+1+size, "|");
                 mvprintw(y+(i%(size/2)) + size/2, x+1+size, "|");
