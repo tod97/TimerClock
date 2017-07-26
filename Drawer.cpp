@@ -13,6 +13,7 @@ bool Drawer::draw( int x, int y, time_t now) {
 
     string digits = ctime(&now);
     tm *date = localtime(&now);
+    int fontSize = 0;
 
     string seconds = to_string(date->tm_sec);
     string minutes = to_string(date->tm_min);
@@ -33,8 +34,9 @@ bool Drawer::draw( int x, int y, time_t now) {
             break;
         case 2:
             digits = hours + minutes + seconds;
+            fontSize = 4;
             for(int i = 0; i < digits.length(); i++) {
-                printDigit(digits[i], 6*(i%2), (y/10) + (3*i) - 3*(i%2), 4);
+                printDigit(digits[i], x/2 - digits.length() + (fontSize+2)*(i%2), (y/10) + (((fontSize/2)+1)*i) - ((fontSize/2)+1)*(i%2), fontSize);
             }
             //printw("%d:%d:%d",date->tm_hour,date->tm_min,date->tm_sec);
             break;
@@ -66,6 +68,7 @@ void Drawer::drawFooter(int x, int y){
 }
 
 void Drawer::printDigit(char c, int x, int y, int size) {
+    size = (size % 2 == 0)?size:size-1;
     switch(c){
         case '0':
             for (int i = 0; i < size; ++i) {
