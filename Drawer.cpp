@@ -6,7 +6,7 @@
 #include "Drawer.h"
 
 using namespace std;
-int Drawer::countType = 4;
+int Drawer::countType = 3;
 int Drawer::type = 0;
 
 bool Drawer::draw( int x, int y, time_t now) {
@@ -23,11 +23,6 @@ bool Drawer::draw( int x, int y, time_t now) {
 
     switch(type){
         case 1:
-            for(int i = 0; i < digits.length(); i++) {
-                printw(&digits[i]);
-            }
-            break;
-        case 2:
 
             digits = hours + ':' + minutes + ':' + seconds;
             for(int i = 0; i < digits.length(); i++) {
@@ -36,7 +31,7 @@ bool Drawer::draw( int x, int y, time_t now) {
 
             //printw("%d:%d:%d",date->tm_hour,date->tm_min,date->tm_sec);
             break;
-        case 3:
+        case 2:
             digits = hours + minutes + seconds;
             for(int i = 0; i < digits.length(); i++) {
                 printDigit(digits[i], 6*(i%2), (y/10) + (3*i) - 3*(i%2), 4);
