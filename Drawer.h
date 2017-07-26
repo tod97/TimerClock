@@ -14,7 +14,7 @@ public:
 
 private:
     static void drawFooter(int x, int y);
-    static void printDigit(char c, int x, int y);
+    static void printDigit(char c, int x, int y, int size);
 };
 
 

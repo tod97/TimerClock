@@ -6,8 +6,8 @@
 #include "Drawer.h"
 
 using namespace std;
-int Drawer::countType = 3;
-int Drawer::type = 2;
+int Drawer::countType = 4;
+int Drawer::type = 3;
 
 bool Drawer::draw( int x, int y, time_t now) {
 
@@ -31,9 +31,16 @@ bool Drawer::draw( int x, int y, time_t now) {
 
             digits = hours + ':' + minutes + ':' + seconds;
             for(int i = 0; i < digits.length(); i++) {
-                printDigit(digits[i], (x/2 - (digits.length()*4)/2) + 4*i, (y/2)-4);
+                printDigit(digits[i], (x/2 - (digits.length()*4)/2) + 4*i, (y/2)-4, 2);
             }
 
+            //printw("%d:%d:%d",date->tm_hour,date->tm_min,date->tm_sec);
+            break;
+        case 3:
+            digits = hours + minutes + seconds;
+            for(int i = 0; i < digits.length(); i++) {
+                printDigit(digits[i], 6*(i%2), (y/10) + (3*i) - 3*(i%2), 4);
+            }
             //printw("%d:%d:%d",date->tm_hour,date->tm_min,date->tm_sec);
             break;
         default:
@@ -63,98 +70,92 @@ void Drawer::drawFooter(int x, int y){
     printw(" | Todino F.");
 }
 
-void Drawer::printDigit(char c, int x, int y) {
+void Drawer::printDigit(char c, int x, int y, int size) {
     switch(c){
         case '0':
-            mvprintw(y, x, "|");
-            mvprintw(y+1, x, "|");
-            mvprintw(y+1, x+1, "_");
-            mvprintw(y+1, x+2, "_");
-            mvprintw(y, x+3, "|");
-            mvprintw(y+1, x+3, "|");
-            mvprintw(y-1, x+1, "_");
-            mvprintw(y-1, x+2, "_");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y+i, x, "|");
+                mvprintw(y+size-1, x+1+i, "_");
+                mvprintw(y+i, x+1+size, "|");
+                mvprintw(y-1, x+1+i, "_");
+            }
             break;
         case '1':
-            mvprintw(y, x+3, "|");
-            mvprintw(y+1, x+3, "|");
+            for (int i = 0; i < size; ++i)
+                mvprintw(y+i, x+size+1, "|");
             break;
         case '2':
-            mvprintw(y+1, x, "|");
-            mvprintw(y+1, x+1, "_");
-            mvprintw(y+1, x+2, "_");
-            mvprintw(y, x+1, "_");
-            mvprintw(y, x+2, "_");
-            mvprintw(y, x+3, "|");
-            mvprintw(y-1, x+1, "_");
-            mvprintw(y-1, x+2, "_");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)), x+1+size, "|");
+                mvprintw(y+(size/2)-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)) + size/2, x, "|");
+                mvprintw(y+size-1, x+1+i, "_");
+            }
             break;
         case '3':
-            mvprintw(y+1, x+1, "_");
-            mvprintw(y+1, x+2, "_");
-            mvprintw(y, x+1, "_");
-            mvprintw(y, x+2, "_");
-            mvprintw(y, x+3, "|");
-            mvprintw(y+1, x+3, "|");
-            mvprintw(y-1, x+1, "_");
-            mvprintw(y-1, x+2, "_");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)), x+1+size, "|");
+                mvprintw(y+(size/2)-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)) + size/2, x+1+size, "|");
+                mvprintw(y+size-1, x+1+i, "_");
+            }
             break;
         case '4':
-            mvprintw(y, x, "|");
-            mvprintw(y, x+1, "_");
-            mvprintw(y, x+2, "_");
-            mvprintw(y, x+3, "|");
-            mvprintw(y+1, x+3, "|");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y+(i%(size/2)), x+1, "|");
+                mvprintw(y+(size/2)-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)), x+1+size, "|");
+                mvprintw(y+(i%(size/2)) + size/2, x+1+size, "|");
+            }
             break;
         case '5':
-            mvprintw(y, x, "|");
-            mvprintw(y+1, x+1, "_");
-            mvprintw(y+1, x+2, "_");
-            mvprintw(y, x+1, "_");
-            mvprintw(y, x+2, "_");
-            mvprintw(y+1, x+3, "|");
-            mvprintw(y-1, x+1, "_");
-            mvprintw(y-1, x+2, "_");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)) + size/2, x+1+size, "|");
+                mvprintw(y+(size/2)-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)), x, "|");
+                mvprintw(y+size-1, x+1+i, "_");
+            }
             break;
         case '6':
-            mvprintw(y, x, "|");
-            mvprintw(y+1, x, "|");
-            mvprintw(y+1, x+1, "_");
-            mvprintw(y+1, x+2, "_");
-            mvprintw(y, x+1, "_");
-            mvprintw(y, x+2, "_");
-            mvprintw(y+1, x+3, "|");
-            mvprintw(y-1, x+1, "_");
-            mvprintw(y-1, x+2, "_");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)), x, "|");
+                mvprintw(y+(i%(size/2)) + size/2, x, "|");
+                mvprintw(y+(size/2)-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)) + size/2, x+1+size, "|");
+                mvprintw(y+size-1, x+1+i, "_");
+            }
             break;
         case '7':
-            mvprintw(y, x+3, "|");
-            mvprintw(y+1, x+3, "|");
-            mvprintw(y-1, x+1, "_");
-            mvprintw(y-1, x+2, "_");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)) + size/2, x+1+size, "|");
+                mvprintw(y+(i%(size/2)), x+1+size, "|");
+            }
             break;
         case '8':
-            mvprintw(y, x, "|");
-            mvprintw(y+1, x, "|");
-            mvprintw(y+1, x+1, "_");
-            mvprintw(y+1, x+2, "_");
-            mvprintw(y, x+1, "_");
-            mvprintw(y, x+2, "_");
-            mvprintw(y, x+3, "|");
-            mvprintw(y+1, x+3, "|");
-            mvprintw(y-1, x+1, "_");
-            mvprintw(y-1, x+2, "_");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)) + size/2, x+1+size, "|");
+                mvprintw(y+(i%(size/2)) + size/2, x, "|");
+                mvprintw(y+(size/2)-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)), x, "|");
+                mvprintw(y+(i%(size/2)), x+1+size, "|");
+                mvprintw(y+size-1, x+1+i, "_");
+            }
             break;
         case '9':
-            mvprintw(y, x, "|");
-            mvprintw(y+1, x+1, "_");
-            mvprintw(y+1, x+2, "_");
-            mvprintw(y, x+1, "_");
-            mvprintw(y, x+2, "_");
-            mvprintw(y, x+3, "|");
-            mvprintw(y+1, x+3, "|");
-            mvprintw(y-1, x+1, "_");
-            mvprintw(y-1, x+2, "_");
+            for (int i = 0; i < size; ++i) {
+                mvprintw(y-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)) + size/2, x+1+size, "|");
+                mvprintw(y+(size/2)-1, x+1+i, "_");
+                mvprintw(y+(i%(size/2)), x, "|");
+                mvprintw(y+(i%(size/2)), x+1+size, "|");
+                mvprintw(y+size-1, x+1+i, "_");
+            }
             break;
         case ':':
             mvprintw(y, x+2, ".");
