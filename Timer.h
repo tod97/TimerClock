@@ -20,8 +20,10 @@ public:
         started = false;
     }
     void startTimer();
-    void pauseTimer();
+    void stopTimer();
     void resetTimer();
+
+    bool isStarted() const;
 
     double getTimer() const;
 

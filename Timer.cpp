@@ -11,7 +11,7 @@ void Timer::startTimer() {
     }
 }
 
-void Timer::pauseTimer() {
+void Timer::stopTimer() {
     if(started) {
         interTime += (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
         startTime = {};
@@ -31,4 +31,8 @@ double Timer::getTimer() const {
     if(!started)
         return 0;
     return (interTime + (duration_cast<microseconds>(steady_clock::now() - startTime)).count()) / 1000000.0;
+}
+
+bool Timer::isStarted() const {
+    return started;
 }

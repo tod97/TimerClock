@@ -42,13 +42,13 @@ int Clock::checkKeyboard() {
         }
         if(Drawer::type == 0){
             if(ch == 's' || ch == 'S') {
-                timer->startTimer();
+                if(!timer->isStarted())
+                    timer->startTimer();
+                else
+                    timer->stopTimer();
             }
             if(ch == 'r' || ch == 'R') {
                 timer->resetTimer();
-            }
-            if(ch == 'p' || ch == 'P') {
-                timer->pauseTimer();
             }
         }
         return 1;
