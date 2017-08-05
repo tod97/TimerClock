@@ -13,7 +13,7 @@ bool Drawer::draw( int x, int y, time_t now, double timer) {
     string digits = ctime(&now);
     string timerString = to_string(timer);
     tm *date = localtime(&now);
-    int fontSize = 0;
+    int fontSize = 0,i = 0;
 
     string seconds = to_string(date->tm_sec);
     string minutes = to_string(date->tm_min);
@@ -22,19 +22,26 @@ bool Drawer::draw( int x, int y, time_t now, double timer) {
     if(minutes.length() == 1) minutes = '0'+minutes;
     if(hours.length() == 1) hours = '0'+hours;
 
+    unsigned long cal_pos = digits.find(' ',digits.find(' ',digits.find(' ',digits.find(' ')+1)+1)+1);
+    string calendar = digits.substr(0,cal_pos);
+
     switch(type){
         case 1:
             digits = hours + ':' + minutes + ':' + seconds;
-            for(int i = 0; i < digits.length(); i++) {
+            for(i = 0; i < digits.length(); i++) {
                 printDigit(digits[i], (x/2 - (digits.length()*4)/2) + 4*i, (y/2)-4, 2);
             }
+            move(y/2,(x/2 - calendar.length()/2));
+            printw(&calendar[0]);
             break;
         case 2:
             digits = hours + minutes + seconds;
             fontSize = 4;
-            for(int i = 0; i < digits.length(); i++) {
+            for(i = 0; i < digits.length(); i++) {
                 printDigit(digits[i], x/2 - digits.length() + (fontSize+2)*(i%2), (y/10) + (((fontSize/2)+1)*i) - ((fontSize/2)+1)*(i%2), fontSize);
             }
+            move((y/10) + (((fontSize/2)+1)*i) - ((fontSize/2)+1)*(i%2),(x/2 - calendar.length()/2) + fontSize/2 - 2);
+            printw(&calendar[0]);
             break;
         default:
             move(y/10,(x/2 - digits.length()/2));

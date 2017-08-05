@@ -29,7 +29,7 @@ void Clock::updateClock() {
     checkKeyboard();
     time_t now = time(0);
     Drawer::draw(width, height, now, timer->getTimer());
-    napms(10);
+    napms(50);
     updateClock();
 }
 
