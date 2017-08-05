@@ -13,8 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05376bb-38c4-4848-9f5f-21351913ea96" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Clock.cpp" afterPath="$PROJECT_DIR$/Clock.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Drawer.cpp" afterPath="$PROJECT_DIR$/Drawer.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timer.cpp" afterPath="$PROJECT_DIR$/Timer.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Timer.h" afterPath="$PROJECT_DIR$/Timer.h" />
     </list>
@@ -66,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/Timer.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="e#106#122#0" expanded="true" />
               </folding>
@@ -74,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Timer.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Timer.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Timer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -94,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Drawer.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Drawer.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Drawer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="202">
               <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
               <folding>
                 <element signature="e#51#70#0" expanded="true" />
@@ -136,10 +134,10 @@
         <option value="$PROJECT_DIR$/cmake-build-debug/Timer.h" />
         <option value="$PROJECT_DIR$/Clock.h" />
         <option value="$PROJECT_DIR$/Drawer.h" />
-        <option value="$PROJECT_DIR$/Timer.h" />
-        <option value="$PROJECT_DIR$/Timer.cpp" />
         <option value="$PROJECT_DIR$/Clock.cpp" />
         <option value="$PROJECT_DIR$/Drawer.cpp" />
+        <option value="$PROJECT_DIR$/Timer.h" />
+        <option value="$PROJECT_DIR$/Timer.cpp" />
       </list>
     </option>
   </component>
@@ -411,12 +409,12 @@
       <workItem from="1501053794909" duration="4523000" />
       <workItem from="1501069695765" duration="2652000" />
       <workItem from="1501408116929" duration="1016000" />
-      <workItem from="1501915717462" duration="7779000" />
+      <workItem from="1501915717462" duration="7951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22985000" />
+    <option name="totallyTimeSpent" value="23157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -820,16 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Timer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="e#106#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -848,14 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Timer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Drawer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -866,11 +846,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Drawer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="202">
           <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding>
             <element signature="e#51#70#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Timer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#106#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Timer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

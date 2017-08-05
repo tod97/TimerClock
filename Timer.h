@@ -19,9 +19,9 @@ public:
         interTime = 0;
         started = false;
     }
-    void startTimer();
-    void stopTimer();
-    void resetTimer();
+    bool startTimer();
+    bool stopTimer();
+    bool resetTimer();
 
     bool isStarted() const;
 
