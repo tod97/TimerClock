@@ -38,7 +38,8 @@ double Timer::getTimer() const {
         return interTime;
     if(!started)
         return 0;
-    return (interTime + (duration_cast<microseconds>(steady_clock::now() - startTime)).count()) / 1000000.0;
+    double result = interTime + (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
+    return result;
 }
 
 bool Timer::isStarted() const {
