@@ -6,15 +6,18 @@
 #define TIMERCLOCK_TIMER_H
 
 #include <ctime>
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
 class Timer {
 
 public:
     Timer(){
-        startTime = 0;
+        startTime = steady_clock::now();
         interTime = 0;
+        started = false;
     }
     void startTimer();
     void pauseTimer();
@@ -23,8 +26,9 @@ public:
     double getTimer() const;
 
 private:
-    clock_t startTime;
+    time_point<high_resolution_clock> startTime;
     double interTime;
+    bool started;
 };
 
 

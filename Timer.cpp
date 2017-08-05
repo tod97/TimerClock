@@ -5,26 +5,30 @@
 #include "Timer.h"
 
 void Timer::startTimer() {
-    if(startTime == 0)
-        startTime = clock();
+    if(!started) {
+        startTime = steady_clock::now();
+        started = true;
+    }
 }
 
 void Timer::pauseTimer() {
-    if(startTime != 0) {
-        interTime += (clock() - startTime) / (double) CLOCKS_PER_SEC;
-        startTime = 0;
+    if(started) {
+        interTime += (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
+        startTime = {};
+        started = false;
     }
 }
 
 void Timer::resetTimer() {
-    startTime = 0;
+    startTime = {};
     interTime = 0;
+    started = false;
 }
 
 double Timer::getTimer() const {
-    if(startTime == 0 && interTime == 0)
-        return 0;
-    if(interTime != 0 && startTime == 0)
+    if(interTime != 0 && !started)
         return interTime;
-    return (( clock() - startTime ) / (double) CLOCKS_PER_SEC) + interTime;
+    if(!started)
+        return 0;
+    return (interTime + (duration_cast<microseconds>(steady_clock::now() - startTime)).count()) / 1000000.0;
 }
