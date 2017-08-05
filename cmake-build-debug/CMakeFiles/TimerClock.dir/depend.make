@@ -4,11 +4,16 @@
 CMakeFiles/TimerClock.dir/Clock.cpp.o: ../Clock.cpp
 CMakeFiles/TimerClock.dir/Clock.cpp.o: ../Clock.h
 CMakeFiles/TimerClock.dir/Clock.cpp.o: ../Drawer.h
+CMakeFiles/TimerClock.dir/Clock.cpp.o: ../Timer.h
 
 CMakeFiles/TimerClock.dir/Drawer.cpp.o: ../Drawer.cpp
 CMakeFiles/TimerClock.dir/Drawer.cpp.o: ../Drawer.h
 
+CMakeFiles/TimerClock.dir/Timer.cpp.o: ../Timer.cpp
+CMakeFiles/TimerClock.dir/Timer.cpp.o: ../Timer.h
+
 CMakeFiles/TimerClock.dir/main.cpp.o: ../Clock.h
 CMakeFiles/TimerClock.dir/main.cpp.o: ../Drawer.h
+CMakeFiles/TimerClock.dir/main.cpp.o: ../Timer.h
 CMakeFiles/TimerClock.dir/main.cpp.o: ../main.cpp
 

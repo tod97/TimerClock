@@ -9,9 +9,9 @@ using namespace std;
 int Drawer::countType = 3;
 int Drawer::type = 0;
 
-bool Drawer::draw( int x, int y, time_t now) {
-
+bool Drawer::draw( int x, int y, time_t now, double timer) {
     string digits = ctime(&now);
+    string timerString = to_string(timer);
     tm *date = localtime(&now);
     int fontSize = 0;
 
@@ -24,13 +24,10 @@ bool Drawer::draw( int x, int y, time_t now) {
 
     switch(type){
         case 1:
-
             digits = hours + ':' + minutes + ':' + seconds;
             for(int i = 0; i < digits.length(); i++) {
                 printDigit(digits[i], (x/2 - (digits.length()*4)/2) + 4*i, (y/2)-4, 2);
             }
-
-            //printw("%d:%d:%d",date->tm_hour,date->tm_min,date->tm_sec);
             break;
         case 2:
             digits = hours + minutes + seconds;
@@ -38,11 +35,12 @@ bool Drawer::draw( int x, int y, time_t now) {
             for(int i = 0; i < digits.length(); i++) {
                 printDigit(digits[i], x/2 - digits.length() + (fontSize+2)*(i%2), (y/10) + (((fontSize/2)+1)*i) - ((fontSize/2)+1)*(i%2), fontSize);
             }
-            //printw("%d:%d:%d",date->tm_hour,date->tm_min,date->tm_sec);
             break;
         default:
             move(y/10,(x/2 - digits.length()/2));
             printw(&digits[0]);
+            move(y/2,(x/2 - timerString.length()/2));
+            printw(&timerString[0]);
             break;
     }
     drawFooter(x,y);
@@ -58,12 +56,10 @@ void Drawer::drawFooter(int x, int y){
     }
     move(y-1,0);
     printw("(C)hange clock type");
-    /*
-    "| (S)tart timer | Stop (T)imer");
-    attron(COLOR_PAIR(2));
-    printw("(E)njoy ^_^");
-    attroff(COLOR_PAIR(2));
-    */
+    //attron(COLOR_PAIR(2));
+    if(Drawer::type == 0)
+        printw(" | (S)tart timer | (P)ause Timer | (R)eset Timer");
+    //attroff(COLOR_PAIR(2));
     printw(" | Todino F.");
 }
 

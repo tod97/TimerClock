@@ -28,7 +28,7 @@ void Clock::startClock(){
 void Clock::updateClock() {
     checkKeyboard();
     time_t now = time(0);
-    Drawer::draw(width, height, now);
+    Drawer::draw(width, height, now, timer->getTimer());
     napms(100);
     updateClock();
 }
@@ -37,8 +37,19 @@ int Clock::checkKeyboard() {
     int ch = getch();
     if (ch != ERR) {
         refresh();
-        if(ch == KEY_LEFT || ch == 'c' || ch == 'C') {
+        if(ch == 'c' || ch == 'C') {
             Drawer::type = (Drawer::type + 1) % Drawer::countType;
+        }
+        if(Drawer::type == 0){
+            if(ch == 's' || ch == 'S') {
+                timer->startTimer();
+            }
+            if(ch == 'r' || ch == 'R') {
+                timer->resetTimer();
+            }
+            if(ch == 'p' || ch == 'P') {
+                timer->pauseTimer();
+            }
         }
         return 1;
     } else {

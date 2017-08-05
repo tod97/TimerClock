@@ -3,7 +3,7 @@ project(TimerClock)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp Clock.h Clock.cpp Drawer.h Drawer.cpp)
+set(SOURCE_FILES main.cpp Clock.h Clock.cpp Drawer.h Drawer.cpp Timer.cpp Timer.h)
 add_executable(TimerClock ${SOURCE_FILES})
 
 set(CURSES_NEED_NCURSES, TRUE)

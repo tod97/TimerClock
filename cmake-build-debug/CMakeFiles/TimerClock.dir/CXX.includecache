@@ -23,6 +23,8 @@ ncurses.h
 -
 Drawer.h
 /Users/francescotodino/TimerClock/Drawer.h
+Timer.h
+/Users/francescotodino/TimerClock/Timer.h
 
 /Users/francescotodino/TimerClock/Drawer.cpp
 iostream
@@ -32,6 +34,14 @@ Drawer.h
 
 /Users/francescotodino/TimerClock/Drawer.h
 ncurses.h
+-
+
+/Users/francescotodino/TimerClock/Timer.cpp
+Timer.h
+/Users/francescotodino/TimerClock/Timer.h
+
+/Users/francescotodino/TimerClock/Timer.h
+ctime
 -
 
 /Users/francescotodino/TimerClock/main.cpp

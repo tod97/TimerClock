@@ -7,13 +7,20 @@
 
 #include <ncurses.h>
 #include "Drawer.h"
+#include "Timer.h"
 
 class Clock {
 public:
     Clock(){
         width = 0;
         height = 0;
+        timer = new Timer();
     };
+
+    ~Clock(){
+        delete menu_win;
+        delete timer;
+    }
     void startClock();
 
     int getWidth() const;
@@ -27,6 +34,7 @@ public:
 private:
     int width, height;
     WINDOW *menu_win;
+    Timer *timer;
     void updateClock();
     int checkKeyboard();
 };

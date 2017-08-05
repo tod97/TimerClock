@@ -8,7 +8,7 @@
 
 class Drawer {
 public:
-    static bool draw( int x, int y, time_t digit);
+    static bool draw( int x, int y, time_t digit, double timer);
     static int type;
     static int countType;
 
