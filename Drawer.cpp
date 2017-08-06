@@ -9,9 +9,8 @@ using namespace std;
 int Drawer::countType = 3;
 int Drawer::type = 0;
 
-bool Drawer::draw( int x, int y, time_t now, double timer) {
+bool Drawer::draw( int x, int y, time_t now, string timer) {
     string digits = ctime(&now);
-    string timerString = to_string(timer);
     tm *date = localtime(&now);
     int fontSize = 0,i = 0;
 
@@ -46,8 +45,8 @@ bool Drawer::draw( int x, int y, time_t now, double timer) {
         default:
             move(y/10,(x/2 - digits.length()/2));
             printw(&digits[0]);
-            move(y/2,(x/2 - timerString.length()/2));
-            printw(&timerString[0]);
+            move(y/2,(x/2 - timer.length()/2));
+            printw(&timer[0]);
             break;
     }
     drawFooter(x,y);

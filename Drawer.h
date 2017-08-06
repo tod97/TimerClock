@@ -6,9 +6,11 @@
 #define TIMER_DRAWER_H
 #include <ncurses.h>
 
+using namespace std;
+
 class Drawer {
 public:
-    static bool draw( int x, int y, time_t digit, double timer);
+    static bool draw( int x, int y, time_t digit, string timer);
     static int type;
     static int countType;
 

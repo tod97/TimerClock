@@ -33,13 +33,21 @@ bool Timer::resetTimer() {
     return false;
 }
 
-double Timer::getTimer() const {
-    if(interTime != 0 && !started)
-        return interTime;
-    if(!started)
-        return 0;
+string Timer::getTimer(int stampType) const{
+    if(interTime != 0 && !started) {
+        return convertTime(interTime,stampType);
+    }
+    if(!started) {
+        switch(stampType){
+            case 1:
+                return "00h 00m 00s 000000ms";
+            default:
+                return "00:00:00.000000";
+        }
+    }
     double result = interTime + (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
-    return result;
+
+    return convertTime(result, stampType);
 }
 
 bool Timer::isStarted() const {
