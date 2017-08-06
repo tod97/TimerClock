@@ -38,15 +38,9 @@ string Timer::getTimer(int stampType) const{
         return convertTime(interTime,stampType);
     }
     if(!started) {
-        switch(stampType){
-            case 1:
-                return "00h 00m 00s 000000ms";
-            default:
-                return "00:00:00.000000";
-        }
+        return convertTime(0,stampType);
     }
     double result = interTime + (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
-
     return convertTime(result, stampType);
 }
 
