@@ -10,9 +10,9 @@ using namespace std;
 
 class Drawer {
 public:
-    static bool draw( int x, int y, time_t digit, string timer);
-    static int type;
-    static int countType;
+    static bool draw( int x, int y, time_t digit, string chrono, string timer);
+    static int type, countType;
+    static int utility, countUtility;
 
 private:
     static void drawFooter(int x, int y);

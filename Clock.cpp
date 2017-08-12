@@ -28,7 +28,7 @@ void Clock::startClock(){
 void Clock::updateClock() {
     checkKeyboard();
     time_t now = time(0);
-    Drawer::draw(width, height, now, timer->getTimer());
+    Drawer::draw(width, height, now, chrono->getChrono(), timer->getTimer());
     napms(50);
     updateClock();
 }
@@ -40,17 +40,38 @@ int Clock::checkKeyboard() {
         if(ch == 'c' || ch == 'C') {
             Drawer::type = (Drawer::type + 1) % Drawer::countType;
         }
-        if(Drawer::type == 0){
-            if(ch == 's' || ch == 'S') {
-                if(!timer->isStarted())
-                    timer->startTimer();
-                else
-                    timer->stopTimer();
-            }
-            if(ch == 'r' || ch == 'R') {
-                timer->resetTimer();
-            }
+        switch(Drawer::type){
+            case 2:
+                if(ch == 's' || ch == 'S') {
+                    if(!chrono->isStarted())
+                        chrono->startChrono();
+                    else
+                        chrono->stopChrono();
+                }
+                if(ch == 'r' || ch == 'R') {
+                    chrono->resetChrono();
+                }
+                break;
+            case 3:
+                if(timer->getSecs() == 0)
+                    timer->setSecs(1);
+                else{
+                    if (ch == 's' || ch == 'S') {
+                        if (!timer->isStarted())
+                            timer->startTimer();
+                    }
+                    if (ch == 65) {
+                        if (!timer->isStarted())
+                            timer->setSecs(timer->getSecs() + 1);
+                    }
+                    if (ch == 66) {
+                        if (!timer->isStarted())
+                            timer->setSecs(timer->getSecs() - 1);
+                    }
+                }
+                break;
         }
+
         return 1;
     } else {
         return 0;

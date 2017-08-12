@@ -98,6 +98,12 @@
 		<Unit filename="/Users/francescotodino/TimerClock/Drawer.h">
 			<Option target="TimerClock"/>
 		</Unit>
+		<Unit filename="/Users/francescotodino/TimerClock/Timer.cpp">
+			<Option target="TimerClock"/>
+		</Unit>
+		<Unit filename="/Users/francescotodino/TimerClock/Timer.h">
+			<Option target="TimerClock"/>
+		</Unit>
 		<Unit filename="/Users/francescotodino/TimerClock/main.cpp">
 			<Option target="TimerClock"/>
 		</Unit>

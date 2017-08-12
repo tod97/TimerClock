@@ -1,10 +1,10 @@
 //
-// Created by Francesco Todino on 30/07/17.
+// Created by Francesco Todino on 12/08/17.
 //
 
 #include "Crono.h"
 
-bool Crono::startTimer() {
+bool Crono::startChrono() {
     if(!started) {
         startTime = steady_clock::now();
         started = true;
@@ -13,7 +13,7 @@ bool Crono::startTimer() {
     return false;
 }
 
-bool Crono::stopTimer() {
+bool Crono::stopChrono() {
     if(started) {
         interTime += (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
         startTime = {};
@@ -23,7 +23,7 @@ bool Crono::stopTimer() {
     return false;
 }
 
-bool Crono::resetTimer() {
+bool Crono::resetChrono() {
     if(!started) {
         startTime = {};
         interTime = 0;
@@ -33,7 +33,7 @@ bool Crono::resetTimer() {
     return false;
 }
 
-string Crono::getTimer(int stampType) const{
+string Crono::getChrono(int stampType) const{
     if(interTime != 0 && !started) {
         return convertTime(interTime,stampType);
     }

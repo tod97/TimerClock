@@ -1,9 +1,9 @@
 //
-// Created by Francesco Todino on 12/08/17.
+// Created by Francesco Todino on 30/07/17.
 //
 
-#ifndef TIMERCLOCK_CRONO_H
-#define TIMERCLOCK_CRONO_H
+#ifndef TIMERCLOCK_TIMER_H
+#define TIMERCLOCK_TIMER_H
 
 #include <ctime>
 #include <chrono>
@@ -13,25 +13,28 @@
 using namespace std;
 using namespace std::chrono;
 
-class Crono {
+class Timer {
 
 public:
-    Crono(){
+    Timer(){
         startTime = steady_clock::now();
-        interTime = 0;
+        timerSecs = 1;
         started = false;
     }
-    bool startChrono();
-    bool stopChrono();
-    bool resetChrono();
+    bool startTimer();
+    bool resetTimer();
 
     bool isStarted() const;
 
-    string getChrono(int stampType = 0) const;
+    double getSecs() const;
+
+    void setSecs(double timerSecs);
+
+    string getTimer(int stampType = 0);
 
 private:
     time_point<high_resolution_clock> startTime;
-    double interTime;
+    double timerSecs;
     bool started;
 
     string convertTime(double t, int stampType = 0) const{
@@ -64,4 +67,4 @@ private:
 };
 
 
-#endif //TIMERCLOCK_CRONO_H
+#endif //TIMERCLOCK_TIMER_H

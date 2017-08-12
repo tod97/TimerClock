@@ -6,10 +6,12 @@
 #include "Drawer.h"
 
 using namespace std;
-int Drawer::countType = 3;
 int Drawer::type = 0;
+int Drawer::countType = 4;
+int Drawer::utility = 0;
+int Drawer::countUtility = 2;
 
-bool Drawer::draw( int x, int y, time_t now, string timer) {
+bool Drawer::draw( int x, int y, time_t now, string chrono, string timer) {
     string digits = ctime(&now);
     tm *date = localtime(&now);
     int fontSize = 0,i = 0;
@@ -25,7 +27,7 @@ bool Drawer::draw( int x, int y, time_t now, string timer) {
     string calendar = digits.substr(0,cal_pos);
 
     switch(type){
-        case 1:
+        case 0:
             digits = hours + ':' + minutes + ':' + seconds;
             for(i = 0; i < digits.length(); i++) {
                 printDigit(digits[i], (x/2 - (digits.length()*4)/2) + 4*i, (y/2)-4, 2);
@@ -33,7 +35,7 @@ bool Drawer::draw( int x, int y, time_t now, string timer) {
             move(y/2,(x/2 - calendar.length()/2));
             printw(&calendar[0]);
             break;
-        case 2:
+        case 1:
             digits = hours + minutes + seconds;
             fontSize = 4;
             for(i = 0; i < digits.length(); i++) {
@@ -42,11 +44,21 @@ bool Drawer::draw( int x, int y, time_t now, string timer) {
             move((y/10) + (((fontSize/2)+1)*i) - ((fontSize/2)+1)*(i%2),(x/2 - calendar.length()/2) + fontSize/2 - 2);
             printw(&calendar[0]);
             break;
+        case 2:
+            move(y/10,(x/2 - digits.length()/2));
+            printw(&digits[0]);
+            move(y / 2, (x / 2 - chrono.length() / 2));
+            printw(&chrono[0]);
+            break;
+        case 3:
+            move(y/10,(x/2 - digits.length()/2));
+            printw(&digits[0]);
+            move(y / 2, (x / 2 - timer.length() / 2));
+            printw(&timer[0]);
+            break;
         default:
             move(y/10,(x/2 - digits.length()/2));
             printw(&digits[0]);
-            move(y/2,(x/2 - timer.length()/2));
-            printw(&timer[0]);
             break;
     }
     drawFooter(x,y);
@@ -63,8 +75,10 @@ void Drawer::drawFooter(int x, int y){
     move(y-1,0);
     printw("(C)hange clock type");
     //attron(COLOR_PAIR(2));
-    if(Drawer::type == 0)
+    if(Drawer::type == 2)
         printw(" | (S)tart and stop Chrono | (R)eset Chrono");
+    if(Drawer::type == 3)
+        printw(" | (S)tart Timer | ^v Change Time");
     //attroff(COLOR_PAIR(2));
     printw(" | Todino F.");
 }

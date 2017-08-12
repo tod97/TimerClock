@@ -7,6 +7,7 @@
 
 #include <ncurses.h>
 #include "Drawer.h"
+#include "Timer.h"
 #include "Crono.h"
 
 class Clock {
@@ -14,12 +15,14 @@ public:
     Clock(){
         width = 0;
         height = 0;
-        timer = new Crono();
+        chrono = new Crono();
+        timer = new Timer();
     };
 
     ~Clock(){
         delete menu_win;
         delete timer;
+        delete chrono;
     }
     void startClock();
 
@@ -34,7 +37,8 @@ public:
 private:
     int width, height;
     WINDOW *menu_win;
-    Crono *timer;
+    Crono *chrono;
+    Timer *timer;
     void updateClock();
     int checkKeyboard();
 };
