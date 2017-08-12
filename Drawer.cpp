@@ -64,7 +64,7 @@ void Drawer::drawFooter(int x, int y){
     printw("(C)hange clock type");
     //attron(COLOR_PAIR(2));
     if(Drawer::type == 0)
-        printw(" | (S)tart and stop Timer | (R)eset Timer");
+        printw(" | (S)tart and stop Chrono | (R)eset Chrono");
     //attroff(COLOR_PAIR(2));
     printw(" | Todino F.");
 }

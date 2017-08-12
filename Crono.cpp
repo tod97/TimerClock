@@ -2,9 +2,9 @@
 // Created by Francesco Todino on 30/07/17.
 //
 
-#include "Timer.h"
+#include "Crono.h"
 
-bool Timer::startTimer() {
+bool Crono::startTimer() {
     if(!started) {
         startTime = steady_clock::now();
         started = true;
@@ -13,7 +13,7 @@ bool Timer::startTimer() {
     return false;
 }
 
-bool Timer::stopTimer() {
+bool Crono::stopTimer() {
     if(started) {
         interTime += (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
         startTime = {};
@@ -23,7 +23,7 @@ bool Timer::stopTimer() {
     return false;
 }
 
-bool Timer::resetTimer() {
+bool Crono::resetTimer() {
     if(!started) {
         startTime = {};
         interTime = 0;
@@ -33,7 +33,7 @@ bool Timer::resetTimer() {
     return false;
 }
 
-string Timer::getTimer(int stampType) const{
+string Crono::getTimer(int stampType) const{
     if(interTime != 0 && !started) {
         return convertTime(interTime,stampType);
     }
@@ -44,6 +44,6 @@ string Timer::getTimer(int stampType) const{
     return convertTime(result, stampType);
 }
 
-bool Timer::isStarted() const {
+bool Crono::isStarted() const {
     return started;
 }

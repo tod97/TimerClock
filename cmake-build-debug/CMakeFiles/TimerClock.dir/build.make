@@ -129,28 +129,28 @@ CMakeFiles/TimerClock.dir/Drawer.cpp.o.provides: CMakeFiles/TimerClock.dir/Drawe
 CMakeFiles/TimerClock.dir/Drawer.cpp.o.provides.build: CMakeFiles/TimerClock.dir/Drawer.cpp.o
 
 
-CMakeFiles/TimerClock.dir/Timer.cpp.o: CMakeFiles/TimerClock.dir/flags.make
-CMakeFiles/TimerClock.dir/Timer.cpp.o: ../Timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TimerClock.dir/Timer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TimerClock.dir/Timer.cpp.o -c /Users/francescotodino/TimerClock/Timer.cpp
+CMakeFiles/TimerClock.dir/Crono.cpp.o: CMakeFiles/TimerClock.dir/flags.make
+CMakeFiles/TimerClock.dir/Crono.cpp.o: ../Crono.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TimerClock.dir/Crono.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TimerClock.dir/Crono.cpp.o -c /Users/francescotodino/TimerClock/Crono.cpp
 
-CMakeFiles/TimerClock.dir/Timer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TimerClock.dir/Timer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescotodino/TimerClock/Timer.cpp > CMakeFiles/TimerClock.dir/Timer.cpp.i
+CMakeFiles/TimerClock.dir/Crono.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TimerClock.dir/Crono.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescotodino/TimerClock/Crono.cpp > CMakeFiles/TimerClock.dir/Crono.cpp.i
 
-CMakeFiles/TimerClock.dir/Timer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TimerClock.dir/Timer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescotodino/TimerClock/Timer.cpp -o CMakeFiles/TimerClock.dir/Timer.cpp.s
+CMakeFiles/TimerClock.dir/Crono.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TimerClock.dir/Crono.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescotodino/TimerClock/Crono.cpp -o CMakeFiles/TimerClock.dir/Crono.cpp.s
 
-CMakeFiles/TimerClock.dir/Timer.cpp.o.requires:
+CMakeFiles/TimerClock.dir/Crono.cpp.o.requires:
 
-.PHONY : CMakeFiles/TimerClock.dir/Timer.cpp.o.requires
+.PHONY : CMakeFiles/TimerClock.dir/Crono.cpp.o.requires
 
-CMakeFiles/TimerClock.dir/Timer.cpp.o.provides: CMakeFiles/TimerClock.dir/Timer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Timer.cpp.o.provides.build
-.PHONY : CMakeFiles/TimerClock.dir/Timer.cpp.o.provides
+CMakeFiles/TimerClock.dir/Crono.cpp.o.provides: CMakeFiles/TimerClock.dir/Crono.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Crono.cpp.o.provides.build
+.PHONY : CMakeFiles/TimerClock.dir/Crono.cpp.o.provides
 
-CMakeFiles/TimerClock.dir/Timer.cpp.o.provides.build: CMakeFiles/TimerClock.dir/Timer.cpp.o
+CMakeFiles/TimerClock.dir/Crono.cpp.o.provides.build: CMakeFiles/TimerClock.dir/Crono.cpp.o
 
 
 # Object files for target TimerClock
@@ -158,7 +158,7 @@ TimerClock_OBJECTS = \
 "CMakeFiles/TimerClock.dir/main.cpp.o" \
 "CMakeFiles/TimerClock.dir/Clock.cpp.o" \
 "CMakeFiles/TimerClock.dir/Drawer.cpp.o" \
-"CMakeFiles/TimerClock.dir/Timer.cpp.o"
+"CMakeFiles/TimerClock.dir/Crono.cpp.o"
 
 # External object files for target TimerClock
 TimerClock_EXTERNAL_OBJECTS =
@@ -166,7 +166,7 @@ TimerClock_EXTERNAL_OBJECTS =
 TimerClock: CMakeFiles/TimerClock.dir/main.cpp.o
 TimerClock: CMakeFiles/TimerClock.dir/Clock.cpp.o
 TimerClock: CMakeFiles/TimerClock.dir/Drawer.cpp.o
-TimerClock: CMakeFiles/TimerClock.dir/Timer.cpp.o
+TimerClock: CMakeFiles/TimerClock.dir/Crono.cpp.o
 TimerClock: CMakeFiles/TimerClock.dir/build.make
 TimerClock: /usr/lib/libcurses.dylib
 TimerClock: /usr/lib/libform.dylib
@@ -182,7 +182,7 @@ CMakeFiles/TimerClock.dir/build: TimerClock
 CMakeFiles/TimerClock.dir/requires: CMakeFiles/TimerClock.dir/main.cpp.o.requires
 CMakeFiles/TimerClock.dir/requires: CMakeFiles/TimerClock.dir/Clock.cpp.o.requires
 CMakeFiles/TimerClock.dir/requires: CMakeFiles/TimerClock.dir/Drawer.cpp.o.requires
-CMakeFiles/TimerClock.dir/requires: CMakeFiles/TimerClock.dir/Timer.cpp.o.requires
+CMakeFiles/TimerClock.dir/requires: CMakeFiles/TimerClock.dir/Crono.cpp.o.requires
 
 .PHONY : CMakeFiles/TimerClock.dir/requires
 

@@ -86,16 +86,16 @@
 		<Unit filename="/Users/francescotodino/TimerClock/Clock.h">
 			<Option target="TimerClock"/>
 		</Unit>
+		<Unit filename="/Users/francescotodino/TimerClock/Crono.cpp">
+			<Option target="TimerClock"/>
+		</Unit>
+		<Unit filename="/Users/francescotodino/TimerClock/Crono.h">
+			<Option target="TimerClock"/>
+		</Unit>
 		<Unit filename="/Users/francescotodino/TimerClock/Drawer.cpp">
 			<Option target="TimerClock"/>
 		</Unit>
 		<Unit filename="/Users/francescotodino/TimerClock/Drawer.h">
-			<Option target="TimerClock"/>
-		</Unit>
-		<Unit filename="/Users/francescotodino/TimerClock/Timer.cpp">
-			<Option target="TimerClock"/>
-		</Unit>
-		<Unit filename="/Users/francescotodino/TimerClock/Timer.h">
 			<Option target="TimerClock"/>
 		</Unit>
 		<Unit filename="/Users/francescotodino/TimerClock/main.cpp">

@@ -13,10 +13,10 @@
 using namespace std;
 using namespace std::chrono;
 
-class Timer {
+class Crono {
 
 public:
-    Timer(){
+    Crono(){
         startTime = steady_clock::now();
         interTime = 0;
         started = false;
