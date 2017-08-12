@@ -21,7 +21,7 @@ bool Drawer::draw( int x, int y, time_t now, string timer) {
     if(minutes.length() == 1) minutes = '0'+minutes;
     if(hours.length() == 1) hours = '0'+hours;
 
-    unsigned long cal_pos = digits.find(' ',digits.find(' ',digits.find(' ',digits.find(' ')+1)+1)+1);
+    unsigned long cal_pos = digits.find(' ',digits.find(' ',digits.find(' ')+1)+1);
     string calendar = digits.substr(0,cal_pos);
 
     switch(type){
