@@ -45,14 +45,10 @@ bool Drawer::draw( int x, int y, time_t now, string chrono, string timer) {
             printw(&calendar[0]);
             break;
         case 2:
-            move(y/10,(x/2 - digits.length()/2));
-            printw(&digits[0]);
             move(y / 2, (x / 2 - chrono.length() / 2));
             printw(&chrono[0]);
             break;
         case 3:
-            move(y/10,(x/2 - digits.length()/2));
-            printw(&digits[0]);
             move(y / 2, (x / 2 - timer.length() / 2));
             printw(&timer[0]);
             break;
