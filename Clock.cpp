@@ -22,16 +22,16 @@ void Clock::startClock(){
     init_pair(3, COLOR_BLUE, -1);
     init_pair(4, COLOR_YELLOW, -1);
 
-    updateClock();
+    do {
+        updateClock();
+    }while(update);
 };
 
 void Clock::updateClock() {
-    do{
-        checkKeyboard();
-        time_t now = time(0);
-        Drawer::draw(width, height, now, chrono->getChrono(), timer->getTimer());
-        napms(50);
-    }while(update);
+    checkKeyboard();
+    time_t now = time(0);
+    Drawer::draw(width, height, now, chrono->getChrono(), timer->getTimer());
+    napms(50);
 }
 
 bool Clock::checkKeyboard() {
