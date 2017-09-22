@@ -15,6 +15,7 @@ public:
     Clock(){
         width = 0;
         height = 0;
+        update = true;
         chrono = new Crono();
         timer = new Timer();
     };
@@ -36,11 +37,12 @@ public:
 
 private:
     int width, height;
+    bool update;
     WINDOW *menu_win;
     Crono *chrono;
     Timer *timer;
     void updateClock();
-    int checkKeyboard();
+    bool checkKeyboard();
 };
 
 

@@ -45,10 +45,14 @@ bool Drawer::draw( int x, int y, time_t now, string chrono, string timer) {
             printw(&calendar[0]);
             break;
         case 2:
+            move(y/8,(x/2 - 5));
+            printw("CHRONOMETER");
             move(y / 2, (x / 2 - chrono.length() / 2));
             printw(&chrono[0]);
             break;
         case 3:
+            move(y/8,(x/2 - 2));
+            printw("TIMER");
             move(y / 2, (x / 2 - timer.length() / 2));
             printw(&timer[0]);
             break;
@@ -70,6 +74,8 @@ void Drawer::drawFooter(int x, int y){
     }
     move(y-1,0);
     printw("(C)hange clock type");
+    if(Drawer::type == 0 || Drawer::type == 1)
+        printw(" | (E)xit program");
     //attron(COLOR_PAIR(2));
     if(Drawer::type == 2)
         printw(" | (S)tart and stop Chrono | (R)eset Chrono");

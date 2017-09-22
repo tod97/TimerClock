@@ -26,14 +26,15 @@ void Clock::startClock(){
 };
 
 void Clock::updateClock() {
-    checkKeyboard();
-    time_t now = time(0);
-    Drawer::draw(width, height, now, chrono->getChrono(), timer->getTimer());
-    napms(50);
-    updateClock();
+    do{
+        checkKeyboard();
+        time_t now = time(0);
+        Drawer::draw(width, height, now, chrono->getChrono(), timer->getTimer());
+        napms(50);
+    }while(update);
 }
 
-int Clock::checkKeyboard() {
+bool Clock::checkKeyboard() {
     int ch = getch();
     if (ch != ERR) {
         refresh();
@@ -70,11 +71,15 @@ int Clock::checkKeyboard() {
                     }
                 }
                 break;
+            default:
+                if(ch == 'e' || ch == 'E') {
+                    update = false;
+                }
+                break;
         }
-
-        return 1;
+        return true;
     } else {
-        return 0;
+        return false;
     }
 }
 
