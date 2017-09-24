@@ -51,6 +51,106 @@ test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o
  ../test/lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
  /Users/francescotodino/TimerClock/Crono.h
  /Users/francescotodino/TimerClock/test/ChronoTest.cpp
+test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o
+ ../test/lib/googletest/googletest/include/gtest/gtest-death-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-message.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-param-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-printers.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-test-part.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-typed-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest.h
+ ../test/lib/googletest/googletest/include/gtest/gtest_pred_impl.h
+ ../test/lib/googletest/googletest/include/gtest/gtest_prod.h
+ ../test/lib/googletest/googletest/include/gtest/internal/custom/gtest-port.h
+ ../test/lib/googletest/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-filepath.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-internal.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-linked_ptr.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-param-util-generated.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-param-util.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-port-arch.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-port.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-string.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-tuple.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
+ /Users/francescotodino/TimerClock/Crono.h
+ /Users/francescotodino/TimerClock/test/ClockFixture.cpp
+test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o
+ ../test/lib/googletest/googletest/include/gtest/gtest-death-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-message.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-param-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-printers.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-test-part.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-typed-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest.h
+ ../test/lib/googletest/googletest/include/gtest/gtest_pred_impl.h
+ ../test/lib/googletest/googletest/include/gtest/gtest_prod.h
+ ../test/lib/googletest/googletest/include/gtest/internal/custom/gtest-port.h
+ ../test/lib/googletest/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-filepath.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-internal.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-linked_ptr.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-param-util-generated.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-param-util.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-port-arch.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-port.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-string.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-tuple.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
+ /Users/francescotodino/TimerClock/Crono.h
+ /Users/francescotodino/TimerClock/test/ClockTest.cpp
+test/CMakeFiles/runAllTests.dir/TimerFixture.cpp.o
+ ../test/lib/googletest/googletest/include/gtest/gtest-death-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-message.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-param-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-printers.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-test-part.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-typed-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest.h
+ ../test/lib/googletest/googletest/include/gtest/gtest_pred_impl.h
+ ../test/lib/googletest/googletest/include/gtest/gtest_prod.h
+ ../test/lib/googletest/googletest/include/gtest/internal/custom/gtest-port.h
+ ../test/lib/googletest/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-filepath.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-internal.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-linked_ptr.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-param-util-generated.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-param-util.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-port-arch.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-port.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-string.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-tuple.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
+ /Users/francescotodino/TimerClock/Timer.h
+ /Users/francescotodino/TimerClock/test/TimerFixture.cpp
+test/CMakeFiles/runAllTests.dir/TimerTest.cpp.o
+ ../test/lib/googletest/googletest/include/gtest/gtest-death-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-message.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-param-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-printers.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-test-part.h
+ ../test/lib/googletest/googletest/include/gtest/gtest-typed-test.h
+ ../test/lib/googletest/googletest/include/gtest/gtest.h
+ ../test/lib/googletest/googletest/include/gtest/gtest_pred_impl.h
+ ../test/lib/googletest/googletest/include/gtest/gtest_prod.h
+ ../test/lib/googletest/googletest/include/gtest/internal/custom/gtest-port.h
+ ../test/lib/googletest/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-filepath.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-internal.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-linked_ptr.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-param-util-generated.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-param-util.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-port-arch.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-port.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-string.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-tuple.h
+ ../test/lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
+ /Users/francescotodino/TimerClock/Timer.h
+ /Users/francescotodino/TimerClock/test/TimerTest.cpp
 test/CMakeFiles/runAllTests.dir/runAllTests.cpp.o
  ../test/lib/googletest/googletest/include/gtest/gtest-death-test.h
  ../test/lib/googletest/googletest/include/gtest/gtest-message.h

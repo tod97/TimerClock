@@ -1,16 +1,16 @@
 #include "gtest/gtest.h"
 
-#include "../Crono.h"
+#include "../Timer.h"
 
-TEST(Crono, DefaultConstructor) {
-    Crono c;
-    ASSERT_FALSE(c.isStarted());
-    ASSERT_EQ(0, c.getInterTime());
-    ASSERT_EQ(steady_clock::now(), c.getStartTime());
+TEST(Timer, DefaultConstructor) {
+    Timer t;
+    ASSERT_FALSE(t.isStarted());
+    ASSERT_EQ(0, t.getSecs());
+    ASSERT_EQ(steady_clock::now(), t.getStartTime());
 }
 
-TEST(Crono, TestStart) {
-    Crono c;
-    c.startChrono();
-    ASSERT_FALSE(c.isStarted());
+TEST(Timer, TestStartTimer) {
+    Timer t;
+    t.startTimer();
+    ASSERT_FALSE(t.isStarted());
 }

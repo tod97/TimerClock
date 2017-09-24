@@ -28,9 +28,13 @@ public:
 
     double getSecs() const;
 
+    const time_point<high_resolution_clock> &getStartTime() const;
+
     void setSecs(double timerSecs);
 
-    string getTimer(int stampType = 0);
+    string getTimerString(int stampType = 0);
+
+    double getTimerDouble(int stampType = 0);
 
 private:
     time_point<high_resolution_clock> startTime;

@@ -9,7 +9,7 @@ TEST(Crono, DefaultConstructor) {
     ASSERT_EQ(steady_clock::now(), c.getStartTime());
 }
 
-TEST(Crono, TestStart) {
+TEST(Crono, TestStartCrono) {
     Crono c;
     c.startChrono();
     ASSERT_FALSE(c.isStarted());

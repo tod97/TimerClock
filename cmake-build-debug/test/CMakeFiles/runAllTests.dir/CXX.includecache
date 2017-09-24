@@ -288,6 +288,16 @@ string
 math.h
 -
 
+/Users/francescotodino/TimerClock/Timer.h
+ctime
+-
+chrono
+-
+string
+-
+math.h
+-
+
 /Users/francescotodino/TimerClock/test/ChronoFixture.cpp
 gtest/gtest.h
 /Users/francescotodino/TimerClock/test/gtest/gtest.h
@@ -299,6 +309,30 @@ gtest/gtest.h
 /Users/francescotodino/TimerClock/test/gtest/gtest.h
 ../Crono.h
 /Users/francescotodino/TimerClock/Crono.h
+
+/Users/francescotodino/TimerClock/test/ClockFixture.cpp
+gtest/gtest.h
+/Users/francescotodino/TimerClock/test/gtest/gtest.h
+../Crono.h
+/Users/francescotodino/TimerClock/Crono.h
+
+/Users/francescotodino/TimerClock/test/ClockTest.cpp
+gtest/gtest.h
+/Users/francescotodino/TimerClock/test/gtest/gtest.h
+../Crono.h
+/Users/francescotodino/TimerClock/Crono.h
+
+/Users/francescotodino/TimerClock/test/TimerFixture.cpp
+gtest/gtest.h
+/Users/francescotodino/TimerClock/test/gtest/gtest.h
+../Timer.h
+/Users/francescotodino/TimerClock/Timer.h
+
+/Users/francescotodino/TimerClock/test/TimerTest.cpp
+gtest/gtest.h
+/Users/francescotodino/TimerClock/test/gtest/gtest.h
+../Timer.h
+/Users/francescotodino/TimerClock/Timer.h
 
 /Users/francescotodino/TimerClock/test/runAllTests.cpp
 gtest/gtest.h

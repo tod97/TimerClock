@@ -14,7 +14,7 @@ protected:
 };
 
 
-TEST_F(CronoSuite, TestStart) {
+TEST_F(CronoSuite, TestStartCrono) {
     c.startChrono();
 
     ASSERT_EQ(0,c.getChronoDouble());

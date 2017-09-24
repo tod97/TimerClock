@@ -32,7 +32,7 @@ double Timer::getSecs() const {
     return timerSecs;
 }
 
-string Timer::getTimer(int stampType){
+string Timer::getTimerString(int stampType){
     if(timerSecs != 0 && !started) {
         return convertTime(timerSecs,stampType);
     }
@@ -48,6 +48,26 @@ string Timer::getTimer(int stampType){
     return convertTime(result, stampType);
 }
 
+double Timer::getTimerDouble(int stampType){
+    if(timerSecs != 0 && !started) {
+        return timerSecs;
+    }
+    if(!started) {
+        return timerSecs;
+    }
+    double result = timerSecs - (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
+    if(result <= 0){
+        result = 0;
+        started = false;
+        timerSecs = 0;
+    }
+    return result;
+}
+
 bool Timer::isStarted() const {
     return started;
+}
+
+const time_point<high_resolution_clock> &Timer::getStartTime() const {
+    return startTime;
 }
