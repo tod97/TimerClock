@@ -33,7 +33,7 @@ bool Crono::resetChrono() {
     return false;
 }
 
-string Crono::getChrono(int stampType) const{
+string Crono::getChronoString(int stampType) const{
     if(interTime != 0 && !started) {
         return convertTime(interTime,stampType);
     }
@@ -44,6 +44,25 @@ string Crono::getChrono(int stampType) const{
     return convertTime(result, stampType);
 }
 
+double Crono::getChronoDouble(int stampType) const{
+    if(interTime != 0 && !started) {
+        return interTime;
+    }
+    if(!started) {
+        return 0;
+    }
+    double result = interTime + (duration_cast<microseconds>(steady_clock::now() - startTime)).count() / 1000000.0;
+    return result;
+}
+
 bool Crono::isStarted() const {
     return started;
+}
+
+const time_point<high_resolution_clock> &Crono::getStartTime() const {
+    return startTime;
+}
+
+double Crono::getInterTime() const {
+    return interTime;
 }

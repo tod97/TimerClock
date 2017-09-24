@@ -16,18 +16,23 @@ using namespace std::chrono;
 class Crono {
 
 public:
-    Crono(){
-        startTime = steady_clock::now();
-        interTime = 0;
-        started = false;
+    Crono(time_point<high_resolution_clock> t = steady_clock::now(), double i=0, bool s=false){
+        startTime = t;
+        interTime = i;
+        started = s;
     }
     bool startChrono();
     bool stopChrono();
     bool resetChrono();
 
+    const time_point<high_resolution_clock> &getStartTime() const;
+
+    double getInterTime() const;
+
     bool isStarted() const;
 
-    string getChrono(int stampType = 0) const;
+    string getChronoString(int stampType = 0) const;
+    double getChronoDouble(int stampType = 0) const;
 
 private:
     time_point<high_resolution_clock> startTime;

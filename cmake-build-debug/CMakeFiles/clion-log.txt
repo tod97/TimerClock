@@ -1,5 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/francescotodino/TimerClock
--- Found Curses: /usr/lib/libcurses.dylib  
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/francescotodino/TimerClock/cmake-build-debug
