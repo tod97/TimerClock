@@ -30,7 +30,7 @@ void Clock::startClock(){
 void Clock::updateClock() {
     checkKeyboard();
     time_t now = time(0);
-    Drawer::draw(width, height, now, chrono->getChronoString(), timer->getTimer());
+    Drawer::draw(width, height, now, chrono->getChronoString(), timer->getTimerString());
     napms(50);
 }
 
