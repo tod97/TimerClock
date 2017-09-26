@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libcored.a  CMakeFiles/core.dir/Clock.cpp.o CMakeFiles/core.dir/Drawer.cpp.o CMakeFiles/core.dir/Timer.cpp.o CMakeFiles/core.dir/Crono.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libcored.a

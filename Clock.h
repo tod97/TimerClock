@@ -35,6 +35,10 @@ public:
 
     void setHeight(int height);
 
+    bool isUpdate() const;
+
+    void setUpdate(bool update);
+
 private:
     int width, height;
     bool update;

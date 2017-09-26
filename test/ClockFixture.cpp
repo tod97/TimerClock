@@ -1,21 +1,22 @@
 #include "gtest/gtest.h"
 
-#include "../Crono.h"
+#include "../Clock.h"
 
 
-class CronoSuite : public ::testing::Test {
+class ClockSuite : public ::testing::Test {
 
 protected:
     virtual void SetUp() {
-        c = Crono(steady_clock::now(),0,true);
+        //c = Clock();
     }
 
-    Crono c;
+    Clock c;
 };
 
 
-TEST_F(CronoSuite, TestStart) {
-    c.startChrono();
+TEST_F(ClockSuite, TestStart) {
+    c.startClock();
 
-    ASSERT_EQ(0,c.getChronoDouble());
+    ASSERT_EQ(100,c.getHeight());
+    ASSERT_EQ(100,c.getWidth());
 }

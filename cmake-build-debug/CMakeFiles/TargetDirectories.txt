@@ -1,8 +1,9 @@
 /Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/install/local.dir
-/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/install/strip.dir
 /Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/install.dir
+/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/core.dir
 /Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/list_install_components.dir
 /Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles/TimerClock.dir
 /Users/francescotodino/TimerClock/cmake-build-debug/test/CMakeFiles/install/local.dir

@@ -98,3 +98,11 @@ int Clock::getHeight() const {
 void Clock::setHeight(int height) {
     Clock::height = height;
 }
+
+bool Clock::isUpdate() const {
+    return update;
+}
+
+void Clock::setUpdate(bool update) {
+    Clock::update = update;
+}

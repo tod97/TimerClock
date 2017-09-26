@@ -290,6 +290,9 @@ TimerClock_BINARY_DIR:STATIC=/Users/francescotodino/TimerClock/cmake-build-debug
 //Value Computed by CMake
 TimerClock_SOURCE_DIR:STATIC=/Users/francescotodino/TimerClock
 
+//Dependencies for target
+core_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/Users/francescotodino/TimerClock/cmake-build-debug/test/lib/googletest/googlemock
 

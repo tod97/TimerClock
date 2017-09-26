@@ -68,28 +68,6 @@ install/local/fast: preinstall/fast
 	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -113,6 +91,28 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -155,6 +155,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named core
+
+# Build rule for target.
+core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 core
+.PHONY : core
+
+# fast build rule for target.
+core/fast:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
+.PHONY : core/fast
 
 #=============================================================================
 # Target rules for targets named TimerClock
@@ -240,6 +253,7 @@ Clock.o: Clock.cpp.o
 
 # target to build an object file
 Clock.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Clock.cpp.o
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Clock.cpp.o
 .PHONY : Clock.cpp.o
 
@@ -249,6 +263,7 @@ Clock.i: Clock.cpp.i
 
 # target to preprocess a source file
 Clock.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Clock.cpp.i
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Clock.cpp.i
 .PHONY : Clock.cpp.i
 
@@ -258,6 +273,7 @@ Clock.s: Clock.cpp.s
 
 # target to generate assembly for a file
 Clock.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Clock.cpp.s
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Clock.cpp.s
 .PHONY : Clock.cpp.s
 
@@ -267,6 +283,7 @@ Crono.o: Crono.cpp.o
 
 # target to build an object file
 Crono.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Crono.cpp.o
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Crono.cpp.o
 .PHONY : Crono.cpp.o
 
@@ -276,6 +293,7 @@ Crono.i: Crono.cpp.i
 
 # target to preprocess a source file
 Crono.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Crono.cpp.i
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Crono.cpp.i
 .PHONY : Crono.cpp.i
 
@@ -285,6 +303,7 @@ Crono.s: Crono.cpp.s
 
 # target to generate assembly for a file
 Crono.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Crono.cpp.s
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Crono.cpp.s
 .PHONY : Crono.cpp.s
 
@@ -294,6 +313,7 @@ Drawer.o: Drawer.cpp.o
 
 # target to build an object file
 Drawer.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Drawer.cpp.o
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Drawer.cpp.o
 .PHONY : Drawer.cpp.o
 
@@ -303,6 +323,7 @@ Drawer.i: Drawer.cpp.i
 
 # target to preprocess a source file
 Drawer.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Drawer.cpp.i
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Drawer.cpp.i
 .PHONY : Drawer.cpp.i
 
@@ -312,6 +333,7 @@ Drawer.s: Drawer.cpp.s
 
 # target to generate assembly for a file
 Drawer.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Drawer.cpp.s
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Drawer.cpp.s
 .PHONY : Drawer.cpp.s
 
@@ -321,6 +343,7 @@ Timer.o: Timer.cpp.o
 
 # target to build an object file
 Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Timer.cpp.o
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Timer.cpp.o
 .PHONY : Timer.cpp.o
 
@@ -330,6 +353,7 @@ Timer.i: Timer.cpp.i
 
 # target to preprocess a source file
 Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Timer.cpp.i
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Timer.cpp.i
 .PHONY : Timer.cpp.i
 
@@ -339,6 +363,7 @@ Timer.s: Timer.cpp.s
 
 # target to generate assembly for a file
 Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Timer.cpp.s
 	$(MAKE) -f CMakeFiles/TimerClock.dir/build.make CMakeFiles/TimerClock.dir/Timer.cpp.s
 .PHONY : Timer.cpp.s
 
@@ -376,10 +401,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/local"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... install/strip"
 	@echo "... install"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... core"
 	@echo "... list_install_components"
 	@echo "... TimerClock"
 	@echo "... runAllTests"

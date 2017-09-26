@@ -81,57 +81,9 @@ test/CMakeFiles/runAllTests.dir/runAllTests.cpp.o.provides: test/CMakeFiles/runA
 test/CMakeFiles/runAllTests.dir/runAllTests.cpp.o.provides.build: test/CMakeFiles/runAllTests.dir/runAllTests.cpp.o
 
 
-test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
-test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o: ../test/ChronoTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o"
-	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runAllTests.dir/ChronoTest.cpp.o -c /Users/francescotodino/TimerClock/test/ChronoTest.cpp
-
-test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/ChronoTest.cpp.i"
-	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescotodino/TimerClock/test/ChronoTest.cpp > CMakeFiles/runAllTests.dir/ChronoTest.cpp.i
-
-test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/ChronoTest.cpp.s"
-	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescotodino/TimerClock/test/ChronoTest.cpp -o CMakeFiles/runAllTests.dir/ChronoTest.cpp.s
-
-test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.requires:
-
-.PHONY : test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.requires
-
-test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.provides: test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.requires
-	$(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.provides.build
-.PHONY : test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.provides
-
-test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.provides.build: test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o
-
-
-test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
-test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o: ../test/ChronoFixture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o"
-	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o -c /Users/francescotodino/TimerClock/test/ChronoFixture.cpp
-
-test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/ChronoFixture.cpp.i"
-	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescotodino/TimerClock/test/ChronoFixture.cpp > CMakeFiles/runAllTests.dir/ChronoFixture.cpp.i
-
-test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/ChronoFixture.cpp.s"
-	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescotodino/TimerClock/test/ChronoFixture.cpp -o CMakeFiles/runAllTests.dir/ChronoFixture.cpp.s
-
-test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.requires:
-
-.PHONY : test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.requires
-
-test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.provides: test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.requires
-	$(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.provides.build
-.PHONY : test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.provides
-
-test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.provides.build: test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o
-
-
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../test/ClockTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o"
 	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runAllTests.dir/ClockTest.cpp.o -c /Users/francescotodino/TimerClock/test/ClockTest.cpp
 
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.i: cmake_force
@@ -155,7 +107,7 @@ test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o.provides.build: test/CMakeFiles/
 
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../test/ClockFixture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o"
 	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runAllTests.dir/ClockFixture.cpp.o -c /Users/francescotodino/TimerClock/test/ClockFixture.cpp
 
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.i: cmake_force
@@ -175,6 +127,54 @@ test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o.provides: test/CMakeFiles/run
 .PHONY : test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o.provides
 
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o.provides.build: test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o
+
+
+test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
+test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o: ../test/ChronoTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o"
+	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runAllTests.dir/ChronoTest.cpp.o -c /Users/francescotodino/TimerClock/test/ChronoTest.cpp
+
+test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/ChronoTest.cpp.i"
+	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescotodino/TimerClock/test/ChronoTest.cpp > CMakeFiles/runAllTests.dir/ChronoTest.cpp.i
+
+test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/ChronoTest.cpp.s"
+	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescotodino/TimerClock/test/ChronoTest.cpp -o CMakeFiles/runAllTests.dir/ChronoTest.cpp.s
+
+test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.requires:
+
+.PHONY : test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.requires
+
+test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.provides: test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.requires
+	$(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.provides.build
+.PHONY : test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.provides
+
+test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.provides.build: test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o
+
+
+test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
+test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o: ../test/ChronoFixture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o"
+	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o -c /Users/francescotodino/TimerClock/test/ChronoFixture.cpp
+
+test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/ChronoFixture.cpp.i"
+	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescotodino/TimerClock/test/ChronoFixture.cpp > CMakeFiles/runAllTests.dir/ChronoFixture.cpp.i
+
+test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/ChronoFixture.cpp.s"
+	cd /Users/francescotodino/TimerClock/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescotodino/TimerClock/test/ChronoFixture.cpp -o CMakeFiles/runAllTests.dir/ChronoFixture.cpp.s
+
+test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.requires:
+
+.PHONY : test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.requires
+
+test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.provides: test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.requires
+	$(MAKE) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.provides.build
+.PHONY : test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.provides
+
+test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.provides.build: test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o
 
 
 test/CMakeFiles/runAllTests.dir/TimerTest.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
@@ -228,10 +228,10 @@ test/CMakeFiles/runAllTests.dir/TimerFixture.cpp.o.provides.build: test/CMakeFil
 # Object files for target runAllTests
 runAllTests_OBJECTS = \
 "CMakeFiles/runAllTests.dir/runAllTests.cpp.o" \
-"CMakeFiles/runAllTests.dir/ChronoTest.cpp.o" \
-"CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o" \
 "CMakeFiles/runAllTests.dir/ClockTest.cpp.o" \
 "CMakeFiles/runAllTests.dir/ClockFixture.cpp.o" \
+"CMakeFiles/runAllTests.dir/ChronoTest.cpp.o" \
+"CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o" \
 "CMakeFiles/runAllTests.dir/TimerTest.cpp.o" \
 "CMakeFiles/runAllTests.dir/TimerFixture.cpp.o"
 
@@ -239,15 +239,16 @@ runAllTests_OBJECTS = \
 runAllTests_EXTERNAL_OBJECTS =
 
 test/runAllTests: test/CMakeFiles/runAllTests.dir/runAllTests.cpp.o
-test/runAllTests: test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o
-test/runAllTests: test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o
 test/runAllTests: test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o
 test/runAllTests: test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o
+test/runAllTests: test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o
+test/runAllTests: test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o
 test/runAllTests: test/CMakeFiles/runAllTests.dir/TimerTest.cpp.o
 test/runAllTests: test/CMakeFiles/runAllTests.dir/TimerFixture.cpp.o
 test/runAllTests: test/CMakeFiles/runAllTests.dir/build.make
 test/runAllTests: test/lib/googletest/googlemock/gtest/libgtestd.a
 test/runAllTests: test/lib/googletest/googlemock/gtest/libgtest_maind.a
+test/runAllTests: libcored.a
 test/runAllTests: test/lib/googletest/googlemock/gtest/libgtestd.a
 test/runAllTests: test/CMakeFiles/runAllTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable runAllTests"
@@ -259,10 +260,10 @@ test/CMakeFiles/runAllTests.dir/build: test/runAllTests
 .PHONY : test/CMakeFiles/runAllTests.dir/build
 
 test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/runAllTests.cpp.o.requires
-test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.requires
-test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.requires
 test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o.requires
 test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o.requires
+test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/ChronoTest.cpp.o.requires
+test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/ChronoFixture.cpp.o.requires
 test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/TimerTest.cpp.o.requires
 test/CMakeFiles/runAllTests.dir/requires: test/CMakeFiles/runAllTests.dir/TimerFixture.cpp.o.requires
 

@@ -6,11 +6,11 @@ TEST(Crono, DefaultConstructor) {
     Crono c;
     ASSERT_FALSE(c.isStarted());
     ASSERT_EQ(0, c.getInterTime());
-    ASSERT_EQ(steady_clock::now(), c.getStartTime());
+    ASSERT_NE(steady_clock::now(), c.getStartTime());
 }
 
 TEST(Crono, TestStartCrono) {
     Crono c;
     c.startChrono();
-    ASSERT_FALSE(c.isStarted());
+    ASSERT_TRUE(c.isStarted());
 }

@@ -73,7 +73,10 @@ test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../test/lib/googletest/googl
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../test/lib/googletest/googletest/include/gtest/internal/gtest-string.h
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../test/lib/googletest/googletest/include/gtest/internal/gtest-tuple.h
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../test/lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
+test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../Clock.h
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../Crono.h
+test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../Drawer.h
+test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../Timer.h
 test/CMakeFiles/runAllTests.dir/ClockFixture.cpp.o: ../test/ClockFixture.cpp
 
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../test/lib/googletest/googletest/include/gtest/gtest-death-test.h
@@ -98,7 +101,10 @@ test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../test/lib/googletest/googlete
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../test/lib/googletest/googletest/include/gtest/internal/gtest-string.h
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../test/lib/googletest/googletest/include/gtest/internal/gtest-tuple.h
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../test/lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
+test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../Clock.h
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../Crono.h
+test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../Drawer.h
+test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../Timer.h
 test/CMakeFiles/runAllTests.dir/ClockTest.cpp.o: ../test/ClockTest.cpp
 
 test/CMakeFiles/runAllTests.dir/TimerFixture.cpp.o: ../test/lib/googletest/googletest/include/gtest/gtest-death-test.h

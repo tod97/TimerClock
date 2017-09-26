@@ -17,5 +17,5 @@ protected:
 TEST_F(TimerSuite, TestStartTimer) {
     t.startTimer();
 
-    ASSERT_EQ(0,t.getTimerDouble());
+    ASSERT_NE(0,t.getTimerDouble());
 }
