@@ -21,7 +21,6 @@ public:
     };
 
     ~Clock(){
-        delete menu_win;
         delete timer;
         delete chrono;
     }

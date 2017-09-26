@@ -249,6 +249,8 @@ test/runAllTests: test/CMakeFiles/runAllTests.dir/build.make
 test/runAllTests: test/lib/googletest/googlemock/gtest/libgtestd.a
 test/runAllTests: test/lib/googletest/googlemock/gtest/libgtest_maind.a
 test/runAllTests: libcored.a
+test/runAllTests: /usr/lib/libcurses.dylib
+test/runAllTests: /usr/lib/libform.dylib
 test/runAllTests: test/lib/googletest/googlemock/gtest/libgtestd.a
 test/runAllTests: test/CMakeFiles/runAllTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/francescotodino/TimerClock/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable runAllTests"

@@ -6,17 +6,5 @@
 class ClockSuite : public ::testing::Test {
 
 protected:
-    virtual void SetUp() {
-        //c = Clock();
-    }
-
-    Clock c;
+    virtual void SetUp() {}
 };
-
-
-TEST_F(ClockSuite, TestStart) {
-    c.startClock();
-
-    ASSERT_EQ(100,c.getHeight());
-    ASSERT_EQ(100,c.getWidth());
-}
